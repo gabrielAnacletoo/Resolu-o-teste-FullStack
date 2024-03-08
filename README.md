@@ -14,6 +14,19 @@ Encontrei essa fórmula no Stack Overflow em C#, e a adaptei para JavaScript. A 
 ### Algoritmo do Vizinho Mais Próximo (Nearest Neighbor): 
 Este algoritmo é uma heurística simples e eficaz para encontrar uma solução aproximada para o problema do caixeiro-viajante. Ele me permitiu determinar a ordem dos clientes na rota, escolhendo iterativamente o cliente mais próximo do ponto atual.
 
+
+Para resolver esse desafio, utilizei as seguintes tecnologias:
+
+- **Node.js**: Plataforma de execução de JavaScript utilizada para desenvolver o backend da aplicação.
+- **NestJS**: Um framework para construir aplicativos da Web eficientes e escaláveis em Node.js.
+- **PostgreSQL**: Banco de dados relacional usado para armazenar informações dos clientes e calcular rotas.
+- **Class Validator e Class Transformer**: Utilizados para validar e transformar os DTOs (Data Transfer Objects) utilizados na comunicação entre o frontend e o backend.
+- **Styled Components**: Biblioteca para estilizar componentes React com CSS em JavaScript.
+- **Bootstrap**: Framework front-end para desenvolvimento ágil de interfaces responsivas e mobile-first.
+- **Axios**: Cliente HTTP baseado em Promise para o navegador e Node.js. Foi utilizado para fazer requisições AJAX no frontend.
+- **Beekeeper Studio**: Utilizado como ferramenta de interface gráfica para facilitar a consulta e gerenciamento do banco de dados PostgreSQL.
+
+
 ## 💻 Instalação
 
 Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
