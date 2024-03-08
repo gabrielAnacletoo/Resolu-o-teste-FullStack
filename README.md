@@ -27,7 +27,6 @@ Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instala
 # Instale as dependencias
 - $ npm install
 
-
 # Rode a aplicação
 - $ npm run start:dev
 ```
@@ -45,12 +44,12 @@ Antes de começar, certifique-se de ter o [Node.js](https://nodejs.org/) instala
 - **Descrição**: Retorna a menor rota calculada entre todos os clentes.
 
 ### 🔵 GET /clients
-- **Descrição**: Retorna todos os clientes, porém com paginação, Também é possivel pesquisar utiliando filtros como : name, email, phone, além de paginar o resultando enviando page, e limit, onde pagina é a pagina que quer receber e limite o total de registro por pagina. Por padrão eu defini como page 1 e limit 10. isso por ser ajustado como quiser na requisição. 
+- **Descrição**: Retorna todos os clientes, porém com paginação, Também é possivel pesquisar utiliando filtros como (name, email, phone), além de paginar o resultando enviando page, e limit, onde pagina é a pagina que quer receber e limite o total de registro por pagina. Por padrão eu defini como page 1 e limit 10. isso por ser ajustado como quiser na requisição. 
 
 - **Exemplo**:
 /clients?name=cross%20fit**
 - **Retorno**:
-```
+```javascript
 {
 id: 13,
 name: "Cross fit Iron Fox",
@@ -68,7 +67,7 @@ ou
 - **Exemplo**:
 clients?phone=14991302799
 _ **Retorno**:
-```
+```javascript
 {
 id: 17,
 name: "zoo",
@@ -105,7 +104,7 @@ longitude: -49.04693551889008
 
 - **Exemplo de erro**: 
 
-```
+```javascript
 {
 message: "There is already a client with this email.",
 error: "Bad Request",
