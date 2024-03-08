@@ -67,7 +67,7 @@ ou
 - **Exemplo**:
 clients?phone=14991302799
 
--**Retorno**:
+- **Retorno**:
 ```javascript
 {
 id: 17,
