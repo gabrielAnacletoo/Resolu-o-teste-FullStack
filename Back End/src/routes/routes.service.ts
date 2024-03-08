@@ -26,12 +26,12 @@ export class RoutesService {
       const visited = new Set(); // Conjunto para rastrear os clientes visitados
       let route = []; // Array para armazenar a rota
       let currentPosition = startPosition; // Variável para rastrear a posição atual
-      let totalDistance = 0; // Variável para armazenar a distância total percorrida
 
-      while (visited.size < clients.length) {
+
+      for (let j = 0; j < clients.length; j++) {
         let minDistance = Number.MAX_VALUE; // Distância mínima inicializada com o maior valor possível
         let nearestClientIndex = -1; // Índice do cliente mais próximo
-
+  
         // Encontrar o cliente não visitado mais próximo
         for (let i = 0; i < clients.length; i++) {
           if (!visited.has(i)) { // Verifica se o cliente não foi visitado ainda
@@ -42,29 +42,17 @@ export class RoutesService {
             }
           }
         }
-
         // Marcar o cliente mais próximo como visitado
         visited.add(nearestClientIndex);
         // Adicionar à rota
         route.push(clients[nearestClientIndex]);
-        // Atualizar a distância total
-        totalDistance += minDistance;
         // Deslocar para o local do cliente mais próximo
         currentPosition = clients[nearestClientIndex];
       }
 
-      // Adicionar o ponto inicial ao final da rota
-      route.push(startPosition);
 
-      // Calcular a distância do último cliente ao ponto inicial
-      const distanceToStart = this.calculateDistance(currentPosition, startPosition);
-      totalDistance += distanceToStart;
-
-      // Calcular a distância total em quilômetros
-      totalDistance = parseInt((totalDistance / 1000).toFixed(1));
-
-      // Retornar a rota e a distância total
-      return { route, totalDistance };
+      // Retornar a rota
+      return {route} 
     } catch (error) {
       throw new HttpException(error.message, error.status);
     } finally {
