@@ -1,9 +1,9 @@
 # 🚀 Resolução de Teste Full Stack
  ### Bem vindo(a)!
- ```bash
+ 
 Resumo do Projeto
 Este projeto consiste no desenvolvimento de uma aplicação web onde é possível cadastrar clientes com suas coordenadas geográficas (latitude e longitude) e, em seguida, calcular a menor rota possível entre esses clientes, retornando ao ponto inicial.
-```
+
 
 ### Solução Utilizada
 
